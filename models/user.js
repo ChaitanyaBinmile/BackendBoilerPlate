@@ -13,10 +13,14 @@ const userSchema = new Schema(
       required: true,
       unique: true,
     },
+    password: {
+      type: String,
+      required: true,
+    },
     salt: {
       type: String,
     },
-    password: {
+    profileImageURL: {
       type: String,
       default: "/images/avatar.jpg",
     },
